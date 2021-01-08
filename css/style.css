@@ -11,19 +11,19 @@ body{color:#777;}
 a{text-decoration: none;color:inherit}
 
 /*공통디자인*/
-#logo
-nav {margin-bottom: 55px;}
-nav .inner{position: relative;}
-nav .depth1 {position:absolute;width:100%;top:50px;left:0;}
-nav .depth1 > li {width:20%;float:left;}
+#logo{float: left; padding-left: 100px;}
+nav {margin-bottom: 55px; float: left;}
+nav .depth1 {position:absolute; left: 700px; top:0px; height: 80px;}
+nav .depth1 > li {float:left;}
 nav .depth1 > li > a {display: block;
+  line-height: 80px;
      text-align: center;font-size:1rem;color:#333;
      font-weight: bold;
-     padding-top:5px;padding-bottom:5px}
+     padding-top:5px; padding-bottom:5px}
 
-/* 네비1 */          
+/* 네비1 */      
 #nav1 .depth1{z-index:99}
-#nav1 .depth1 ul, li{list-style-type: none;}
+#nav1 .depth1 ul, #nav1 .depth1 li{list-style-type: none;}
 #nav1 .depth1 ul{border-left:1px solid #ccc;
              border-right:1px solid #ccc;
              border-bottom:1px solid #ccc;
@@ -31,13 +31,15 @@ nav .depth1 > li > a {display: block;
              opacity: 0;
              transition: 0.5s;
              background-color:#fff;
-             padding:10px;
-             box-sizing: border-box;}
+             padding:34px;
+             box-sizing: border-box;
+             line-height: 2em;
+            }
 #nav1 .depth1>li:hover ul{height:300px;opacity: 1;}
 
 /*슬라이드*/
 #slider-wrapper {
-    width: 1920px;
+    width: 100%;
     height: 879px;
 
     position: relative;
@@ -170,15 +172,16 @@ nav .depth1 > li > a {display: block;
     float: left;
   }
 
- /* COMPANY */
+ /* 회사소개 */
 
 #company{}
+
 #company h1{
   color: #000000;
   text-align: center;
   font-size: 50px;
   margin-bottom: 25px;
-  font-weight: ExtraBold;
+  font-weight: bolder;
 }
 #company .orion{
   color: #000000;
@@ -196,29 +199,59 @@ nav .depth1 > li > a {display: block;
 #company > ul{
   display: block;
   height: 198px; width: 394px;
+  float: left;
 
 }
-#company > ul, li {
+#company > ul, #company > ul li {
   font-size: 50px;
   margin-top: 118px;
   float: left;
 }
 
-#company ul li p {font-size: 20px;}
+.cust {margin-top: 200px;}
+.cust, .cust li, .cust li p {display: block; width: 511px;}
+.cust span {font-size: 50px;}
 
-/* brandstory */
+#company img {float: left; margin-top: -300px; margin-left: 420px;}
 
-#brands {color: #000000;}
+#company .cust li p {font-size: 20px;}
 
-#brands ul > li {
+.abc {float: right; margin-top: -300px;
+  display: block; width: 302px; height: 541px;}
+.abc > li {list-style-type: none}
+.abc p {font-size: 55px; margin-top: -10px;}
+.number {float: left; padding-right: 25px;
+  display: block; width: 33px; height: 66px;}
+.abc li span {font-size: 16px; display: block; width: 320px; height: 18px;
+  margin-top: -10px;}
+  .text{font-weight: bold; color: #00CB93;}
+#company ul .text {font-size: 20px;}
+
+.line {border-bottom: 1px solid #000000; padding-bottom: 40px;}
+
+/* 브랜드스토리 */
+
+#brands {color: #000000; background-color: #F1FBF8;
+  padding-bottom: 132px;
+}
+
+#brands ul{
+  padding-left: 309px;
+}
+
+#brands ul li {
   font-size: 16px;
   float: left;
+  padding-left: 19px;
+  list-style-type: none;
 }
-#brands ul > h1 {
+#brands ul h1 {
+  padding-top: 150px;
   font-size: 50px;
-  font-weight: ExtraBold;
+  font-weight: bolder;
+  text-align: left;
 }
-#brands ul > li > span {
+#brands ul li h1 {
   font-size: 35px;
 }
 
@@ -226,7 +259,58 @@ nav .depth1 > li > a {display: block;
   font-size: 20;
 }
 
+/* 제주용암수 소개*/
 
+#about{
+  display: block;
+  width: 100%;
+  height: 1534px;
+  background-image: url('../images/letter_b.jpg');
+}
+
+
+#about div{
+  width: 1087px;
+  height: 797px;
+  background-color: #fff;
+  opacity: 89%;
+  float: right;
+  margin-top: 739px;
+}
+
+#about span {
+  float: left;
+  padding-left: 128px;
+  padding-top: 148px;
+}
+
+#about span h1 {
+  font-size: 20px;
+  padding-bottom: 39px;
+  color: #00CB93;
+} 
+
+#about span h2{
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 38px;
+}
+
+#about span p{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* 소식 */
+#news {padding-top: 109px;
+  background-color: #F1FBF8;
+  color: #000000;
+  margin: 0 auto;
+}
+#news h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
 /*********************section****************************/
 
 
