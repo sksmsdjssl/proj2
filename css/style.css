@@ -238,32 +238,55 @@ nav .depth1 > li > a {display: block;
 
 
 #brands ul{
-  padding-left: 250px;
+  padding-left: 280px;
 }
 
 #brands ul li {
-  font-size: 16px;
-  padding-left: 19px;
   list-style-type: none;
-}
-#brand h1 {
-  display: block;
-  font-size: 50px;
-  font-weight: bolder;
-  text-align: left;
-}
-#brands ul li h1 {
-  font-size: 35px;
 }
 
 #brands #garo li{
 display: inline;
 }
 
-#brands img {float: right;}
+#name li {
+  font-size: 50px;
+  margin-bottom: 72px;
+}
+
+#garo {margin-bottom: 56px;}
+
+#garo li {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 19px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+#time li span {
+  font-size: 35px;
+}
+
+#time li p {
+  font-size: 20px;
+}
+
+#brands img {float: right;
+  margin-top: 150px;
+  margin-right: 450px;
+}
 
 #brt{
   font-size: 20;
+}
+
+#box{
+  display: block;
+  width: 800px;
+  height: 410px;
+  float: left;
+  margin-top: 158px;
 }
 
 /* 제주용암수 소개*/
@@ -322,13 +345,13 @@ display: inline;
   padding-bottom: 20px;
 }
 
-#news p{
+#news #oo {
   text-align: center;
   padding-bottom: 98px;
 }
 
-#news #nn ul {margin-left: 280px; list-style: none;}
-#news #nn ul li {height: 400px; width: 505px; display: inline-block;
+#news #nn ul {margin-left: 180px; list-style: none;}
+#news #nn ul li {height: 400px; width: 505px; display: inline-block; text-align: center;
 }
 #news img {padding-bottom: 20px;}
 
